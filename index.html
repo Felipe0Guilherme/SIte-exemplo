@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SITE EXEMPLO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300;1,9..144,600&family=Geologica:wght@200;400;700;900&family=Instrument+Serif:ital@0;1&family=Orbitron:wght@400;700;900&family=Syne:wght@400;700;800;900&family=Unbounded:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-glow"></div>
+<div id="cur-dot"></div>
+<!-- PICKER -->
+<div id="pk">
+  <select id="ns">
+    <option value="car">🚗  Concessionária</option>
+    <option value="dental">🦷  Clínica Odontológica</option>
+    <option value="market">🛒  Supermercado</option>
+    <option value="gym">💪  Academia</option>
+    <option value="law">⚖️  Advocacia</option>
+    <option value="pet">🐾  Pet Shop</option>
+    <option value="realty">🏡  Imobiliária</option>
+    <option value="restaurant">🍽️  Restaurante</option>
+    <option value="beauty">✨  Estética</option>
+    <option value="tech">💻  Software</option>
+  </select>
+  <span id="lbl">Concessionária</span>
+  <div id="cart-pill">🛒 <span id="cn">0</span></div>
+</div>
+<div id="tst"><div class="tdt"></div><span id="tm"></span></div>
+<div id="mo"><div id="mb"><button class="mx" onclick="closeModal()">✕</button><div id="mc"></div></div></div>
+<div id="app"></div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
