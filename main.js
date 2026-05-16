@@ -11,7 +11,7 @@ const FIREBASE_CONFIG = {
 
 firebase.initializeApp(FIREBASE_CONFIG);
 const _db = firebase.database();
-// ── STATE ───────────────────────────────────────────────────────
+
 let cur = 'car', cartN = 0, favs = new Set(), toastT = null, restTab = 'Entradas';
 
 const THEMES = {
